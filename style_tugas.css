@@ -1,0 +1,223 @@
+
+body
+{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+main
+{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+section
+{
+        background-color: rgb(21, 35, 36);
+        background-position: center;
+        background-size: cover;
+        height: 100px;
+        width: 100%;
+        place-items: center;
+        display: grid;
+}
+
+.wrapper 
+{
+    padding-top: 50px;
+    position: fixed;
+    left:   250px;
+    height: 100%;
+    width: 60%;
+    background-image: url(boba.jpeg);
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 0px, 15px, 20px rgba(0,0,0,0.1);
+}
+
+.wrapper form
+{
+    padding : 10px 30px 50px 30px;
+}
+
+.wrapper form .field
+{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+
+
+.wrapper form .field input
+{
+    height: 100%;
+    width: 90%;
+    outline: none;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid rgb(3, 34, 44);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.wrapper form .field select
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid rgb(1, 7, 8);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+
+.wrapper form .field option
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid lightblue;
+    border-radius: 25px;
+    transition: all 0.3s ease
+}
+
+ button, .danger
+{
+    background-color: black;
+}
+button, .update
+{
+    background-color: rgb(97, 97, 196);
+}
+  
+ button, .danger:hover {
+    background: red;
+  }
+  button, .update:hover {
+    background: green;
+  }
+
+
+.wrapper form .field select:focus, form .field select:valid
+{
+    border-color: red;
+}
+#keywords {
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+  }
+  
+  
+  #keywords thead {
+    cursor: pointer;
+    background: #6794b6;
+  }
+  #keywords thead tr th { 
+    font-weight: bold;
+    padding: 12px 30px;
+    padding-left: 42px;
+  }
+  #keywords thead tr th span { 
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+
+  #keywords tbody tr { 
+    color: #555;
+  }
+  #keywords tbody tr td {
+    text-align: center;
+    padding: 15px 10px;
+  }
+  #keywords tbody tr td.lalign {
+    text-align: left;
+  }
+
+.wrapper form .field input:focus, form .field input:valid
+{
+    border-color: rgb(0, 255, 64);
+}
+
+
+
+.wrapper form .field label
+{
+    text-align-last: left  ;
+    position:absolute;
+    top: 30%;
+    left: 90px;
+    color: #201010;
+    font-weight: 200;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translate(-50%);
+    transition: all 0.3s ease;
+}
+
+form .field input:focus ~label, form .field input:valid ~label
+{
+    top: 0%;
+    left: 30px;
+    font-size: 16px;
+    background: #ffff;
+    transform: translateY(-50%);
+}
+
+
+
+.form :content
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+form .content label
+{
+    color: #262626;
+    user-select: none;
+    padding-left: 5px;
+}
+
+form .content .pass-link
+{
+    color: #6c6af3;
+}
+
+form .field input[type="submit"]
+{
+    color: rgb(14, 25, 36);
+    border: none;
+    padding-left: 0;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, );
+    transition: all 0.3s ease;
+    background-color: aqua;
+}
